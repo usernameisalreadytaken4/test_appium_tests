@@ -17,8 +17,8 @@ class Device:
         self.connect_address = kwargs.get('connect_address')
         self.app_package = kwargs.get('app_package')
         self.app_activity = kwargs.get('app_activity')
-        self.country = kwargs.get('country') or 'Russia'
-        self.port = kwargs.get('port') or '4723'
+        self.country = kwargs.get('country', 'Russia')
+        self.port = kwargs.get('port', '4723')
 
         self.driver = None
 
