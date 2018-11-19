@@ -1,5 +1,4 @@
 import configparser
-import logging
 
 from appium import webdriver
 
@@ -49,7 +48,5 @@ for device in config.sections():
         app_activity=MAPS_ME.app_activity,
         port=config[device]['port']
     ))
-
-
 
 __all__ = ['devices']

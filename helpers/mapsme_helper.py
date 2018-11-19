@@ -1,9 +1,7 @@
 class MapsMeConnector:
-
     PACKAGE_NAME = 'com.mapswithme.maps'
 
     def __init__(self):
-
         self.app_package = f'{self.PACKAGE_NAME}.pro'
         self.app_activity = f'{self.PACKAGE_NAME}.SplashActivity'
         self.id_mask = f'{self.app_package}:id/'
@@ -77,4 +75,3 @@ class MapsMeConnector:
 
 
 MAPS_ME = MapsMeConnector()
-

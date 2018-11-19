@@ -1,5 +1,5 @@
-import time
 import logging
+import time
 from datetime import datetime
 
 logging.basicConfig(
@@ -113,5 +113,3 @@ def swipe_until_element_and_click(client, element_id, element_text, wait_time=30
     assert element
     logging.info(f'{client.device_name} ... ELEMENT {element_id} EXIST\n')
     element.click()
-
-

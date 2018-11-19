@@ -15,7 +15,6 @@ from helpers import (
 MOSCOW_CENTER = (55.75370903771494, 37.61981338262558, 200)
 RUKKOLA_NAME = 'Руккола'
 
-
 logging.info('DEVICES IN WORK: ' + ', '.join(map(lambda x: x.device_name, devices)))
 
 
