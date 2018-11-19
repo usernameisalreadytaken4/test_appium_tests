@@ -1,6 +1,3 @@
-from helpers import push_continue
-
-
 class MapsMeConnector:
 
     PACKAGE_NAME = 'com.mapswithme.maps'
@@ -12,6 +9,7 @@ class MapsMeConnector:
         self.id_mask = f'{self.app_package}:id/'
 
     def open_app(self, driver):
+        from helpers import push_continue
         push_continue(driver)
         driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()
         driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()

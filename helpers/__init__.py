@@ -1,4 +1,9 @@
 from helpers.mapsme_helper import MAPS_ME
 from helpers.crutch import push_continue
-from helpers.testing_helpers import check_simple_sequence, wait_element, wait_elements, \
-    check_additional_property
+from helpers.testing_helpers import (
+    check_simple_sequence,
+    wait_element,
+    wait_elements,
+    check_additional_property,
+    swipe_until_element_and_click,
+)
